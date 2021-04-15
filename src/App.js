@@ -15,16 +15,29 @@ import {
   ViberIcon,
   WhatsappIcon,
 } from "react-share";
+import kllLogo from "./kll_logo.png";
 import "./App.css";
 
 function App() {
   const shareUrl =
-    "https://ee.humanitarianresponse.info/i/a5tPFS2q?fbclid=IwAR3IB-VzVevSvdGJOPCflblEhi-PGkOjGZVXNUM5mZNlggH4ZgL901o26Xc";
+    "https://ee.humanitarianresponse.info/single/RGuatGl6?returnUrl=https://c2m2-asia.github.io/share-survey/";
   const title = "Survey of Industry's Preparedness for Tourism Recovery";
 
   return (
     <div className="App">
-      <h2>Thank you for taking the time to complete this survey.</h2>
+      <a href="http://www.kathmandulivinglabs.org/">
+        <img src={kllLogo} width="120" height="120" />
+      </a>
+      <h1 className="thank-you">सर्वेक्षणमा भाग लिनुभएकोमा धन्यबाद !</h1>
+      <h3>
+        तपाईँको यस सहयोगले नेपाली पर्यटन क्षेत्रको पुन:उत्थानलाई टेवा
+        पुर्याउनेछ। यो सर्वेक्षण पर्यटन क्षेत्रमा कार्यरत अरूलाई पनि भर्न
+        लगाउनुहोस्।
+      </h3>
+      <p className="share-this">
+        यो फारम फेसबुक, भाइबर, व्हाट्स एप जस्ता सामाजिक संजालमा शेर (share) गर्न
+        उपयुक्त चिन्हमा क्लिक (click) गर्नुहोस्।
+      </p>
       <div
         style={{
           display: "flex",
@@ -34,23 +47,15 @@ function App() {
         }}
       >
         <div className="share-title">
-          <FacebookShareButton
-            url={shareUrl}
-            quote={title}
-            className="emailShareClassname"
-          >
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://ee.humanitarianresponse.info/single/RGuatGl6?returnUrl=https://c2m2-asia.github.io/share-survey/">
             <FacebookIcon size={50} round={true} />
-          </FacebookShareButton>
+          </a>
           <p>Facebook</p>
         </div>
         <div className="share-title">
-          <FacebookMessengerShareButton
-            url={shareUrl}
-            quote={title}
-            className="emailShareClassname"
-          >
+          <a href="fb-messenger://share?link=https%3A%2F%2Fee.humanitarianresponse.info%2Fsingle%2FRGuatGl6%3FreturnUrl%3Dhttps%3A%2F%2Fc2m2-asia.github.io%2Fshare-survey%2F&app_id=123123123">
             <FacebookMessengerIcon size={50} round={true} />
-          </FacebookMessengerShareButton>
+          </a>
           <p>Messenger</p>
         </div>
         <div className="share-title">
