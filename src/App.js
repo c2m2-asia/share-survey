@@ -20,6 +20,7 @@ import "./App.css";
 function App() {
   const shareUrl =
     "https://ee.humanitarianresponse.info/i/a5tPFS2q?fbclid=IwAR3IB-VzVevSvdGJOPCflblEhi-PGkOjGZVXNUM5mZNlggH4ZgL901o26Xc";
+  const title = "Survey of Industry's Preparedness for Tourism Recovery";
 
   return (
     <div className="App">
@@ -35,7 +36,7 @@ function App() {
         <div className="share-title">
           <FacebookShareButton
             url={shareUrl}
-            quote="Kathmandu"
+            quote={title}
             className="emailShareClassname"
           >
             <FacebookIcon size={50} round={true} />
@@ -45,7 +46,7 @@ function App() {
         <div className="share-title">
           <FacebookMessengerShareButton
             url={shareUrl}
-            quote="Kathmandu"
+            quote={title}
             className="emailShareClassname"
           >
             <FacebookMessengerIcon size={50} round={true} />
@@ -55,7 +56,7 @@ function App() {
         <div className="share-title">
           <TwitterShareButton
             url={shareUrl}
-            quote="Kathmandu"
+            quote={title}
             className="emailShareClassname"
           >
             <TwitterIcon size={50} round={true} />
@@ -65,7 +66,7 @@ function App() {
         <div className="share-title">
           <ViberShareButton
             url={shareUrl}
-            quote="Kathmandu"
+            quote={title}
             className="emailShareClassname"
           >
             <ViberIcon size={50} round={true} />
@@ -75,7 +76,7 @@ function App() {
         <div className="share-title">
           <WhatsappShareButton
             url={shareUrl}
-            quote="Kathmandu"
+            quote={title}
             className="emailShareClassname"
           >
             <WhatsappIcon size={50} round={true} />
@@ -85,7 +86,7 @@ function App() {
         <div className="share-title">
           <EmailShareButton
             url={shareUrl}
-            quote="Kathmandu"
+            quote={title}
             className="emailShareClassname"
           >
             <EmailIcon size={50} round={true} />
